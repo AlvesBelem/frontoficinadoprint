@@ -16,7 +16,7 @@ import Link from 'next/link';
 
 
 const links = [
-    { name: 'dashboard', icon: <MdDashboard />, url: '/' },
+    { name: 'dashboard', icon: <MdDashboard />, url: '/dashboard' },
     { name: 'usuários', icon: <MdSupervisedUserCircle />, url: '/users' },
     { name: 'clientes', icon: <MdPerson4 />, url: '/clients' },
     { name: 'Fornecedores', icon: <MdPerson3 />, url: '/suppliers' },

@@ -9,12 +9,9 @@ interface ChildrenProps {
 export default function Layout({ children }: ChildrenProps) {
     return (
         <>
-            <Head>
-                <title>Dashboard</title>
-            </Head>
+            <Sidebar />
             <main className={styles.main}>
-                <Sidebar />
-                <section className={styles.content}>{children}</section>
+                <div className={styles.content}>{children}</div>
             </main>
         </>
     )

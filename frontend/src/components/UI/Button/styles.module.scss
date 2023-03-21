@@ -1,9 +1,9 @@
 .button {
     max-width: 600px;
-    background-color: var(--magenta-100);
+    background-color: var(--primary);
     border: 0;
     padding: 0.4rem;
-    color: var(--white);
+    color: var(--black);
     border-radius: 0.5rem;
     transition: filter 0.2s;
     cursor: pointer;
@@ -16,14 +16,10 @@
     }
 
     &:hover {
-        filter: brightness(1.30);
+        filter: brightness(1.05);
     }
 }
 
-.buttontext {
-    
-    color: var(--white);
-}
 
 @keyframes animate {
     from{

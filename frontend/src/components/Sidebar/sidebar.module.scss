@@ -10,7 +10,7 @@
 }
 
 .image{
-    width: 10rem;
+    width: 8rem;
     margin:  0.5rem;
     padding-bottom: 1rem;
     text-align: center;
@@ -39,7 +39,7 @@
 
                 &:hover,
                 &.active{
-                    background-color: var(--lightBlack);
+                    background-color: var(--gray-500);
                     color: var(--primary);
                 }
             }

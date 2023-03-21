@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import styles from '../products/products.module.scss'
+import styles from './styles.module.scss'
 import Heading from '@/components/Heading'
 import Layout from '@/components/Layout'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Products() {
+export default function Dashboard() {
   return (
     <Layout>
       <Head>
@@ -18,7 +18,7 @@ export default function Products() {
       <main className={styles.main}>
         <div className={styles.container}>
           <Heading
-            title='Olá 👋 , confira seus Produtos.'
+            title='Olá 👋 , confira seu Dashboard.'
             subtitle='Confira seus Resultados.'
           />
         </div>
