@@ -1,8 +1,7 @@
-@import '../../styles/mixins.scss';
-@import '../../styles/variables.scss';
+
 
 .sidebar{
-    background-color: $grayBlack;
+    background-color: var(--lightBlack);
     padding: 1rem 0;
     max-width: fit-content;
     position: fixed;
@@ -15,7 +14,7 @@
     margin:  0.5rem;
     padding-bottom: 1rem;
     text-align: center;
-    border-bottom: 1px solid $secondary;
+    border-bottom: 1px solid var(--secundary);
 }
 
 .navigation{
@@ -27,7 +26,7 @@
             a{
                 text-decoration: none;
                 font-size: 1rem;
-                color: $black;
+                color: var(--black);
                 text-transform: uppercase;
                 display: block;
                 padding: 1rem 1rem;
@@ -40,8 +39,8 @@
 
                 &:hover,
                 &.active{
-                    background-color: $lightBlack;
-                    color: $primary;
+                    background-color: var(--lightBlack);
+                    color: var(--primary);
                 }
             }
         }

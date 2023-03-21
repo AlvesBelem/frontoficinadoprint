@@ -1,5 +1,23 @@
-@import './variables.scss';
-@import './mixins.scss';
+
+
+:root{
+  --white: #fff;
+  --black: #000;
+
+  --primary: #39bcf9;
+  --secundary: #f7f9fa;
+  --lightBlack: #eeeeee;
+  
+
+  --gray-100: #aaa9a9fb;
+  --green-900: #3fffa3;
+  --red-900: #ff3f4b;
+
+  --magenta-100: #ff4dff;
+
+  --font-family: 'Poppins', sans-serif;
+  
+}
 
 * {
   margin: 0;
@@ -10,12 +28,12 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  background-color: $secondary;
+  background-color: var(--secundary);
 }
 
 body {
   font-size: 1.6rem;
-  font-family: $fontFamily;
+  font-family: var(--font-family);
 }
 
 h1,
@@ -50,21 +68,21 @@ h4,
   padding: 1rem 4rem;
   font-size: 1.4rem;
   font-weight: 400;
-  font-family: $fontFamily;
+  font-family: var(--font-family);
 
   &.btn-primary {
-    background-color: $primary;
-    color: $white;
+    background-color: var(--primary);
+    color: var(--white);
 
     &:hover:not(:disabled) {
       cursor: pointer;
-      background-color: lighten($primary, 5);
+      background-color: ( var(--primary), 5);
     }
   }
 
   &:disabled {
     cursor: default;
-    background-color: $lightBlack;
+    background-color: var(--gray-100);
   }
 }
 
@@ -74,17 +92,17 @@ form {
   }
 
   input {
-    font-family: $fontFamily;
+    font-family: var(--font-family);
     border: none;
     background-color: transparent;
     outline: none;
-    border-bottom: 1px solid rgba($black, 0.42);
+    border-bottom: 1px solid rgba(var(--black), 0.42);
     padding: 0.5rem;
     padding-left: 0;
 
     &::placeholder {
-      color: rgba($black, 0.42);
-      font-family: $fontFamily;
+      color: rgba(var(--black), 0.42);
+      font-family: var(--font-family);
     }
   }
 }
